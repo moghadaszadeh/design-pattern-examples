@@ -3,7 +3,7 @@ package ir.moghadaszadeh.creational.prototype;
 import lombok.Builder;
 
 @Builder
-public class Student implements prototype {
+public class Student implements Prototype {
 
     private String firstname;
     private String lastname;
@@ -25,7 +25,7 @@ public class Student implements prototype {
     }
 
     @Override
-    public prototype getClone() {
+    public Prototype getClone() {
         return new Student(firstname, lastname, age);
     }
 }
