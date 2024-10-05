@@ -8,6 +8,7 @@ public class DbConnection {
     private static DbConnection instance;
 
     private DbConnection() {
+        initConnection();
     }
 
     public static synchronized DbConnection getInstance() {
@@ -15,5 +16,11 @@ public class DbConnection {
             instance = new DbConnection();
         }
         return instance;
+    }
+
+    private void initConnection() {
+        /*
+        ...
+         */
     }
 }
